@@ -251,6 +251,11 @@ body{
     font-family: "Nunito", sans-serif;
 }
 
+.card-body{
+    display: flex;
+    flex-direction: column;
+}
+
 .btn-list{
     background-color: #e3f2fd;;
 }
@@ -348,6 +353,10 @@ body{
     margin: 2rem;
 }
 
+.btn-inmueble{
+    justify-self: center;
+}
+
 a{
     text-decoration: none;
     color: black;
@@ -390,6 +399,7 @@ a{
 
 .mapa{
     width: 70%;
+    height: 20rem;
     
 }
 
