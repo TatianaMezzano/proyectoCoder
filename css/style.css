@@ -1,0 +1,506 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Acme", sans-serif;
+}
+
+body{
+    background-color: rgb(199, 199, 199);
+}
+
+.body_galeria{
+    background-color: #e3f2fd;
+}
+
+
+.galeria{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding-bottom:2rem;
+    padding-top: 2rem;
+    width: 100%;
+    
+    
+}
+
+.tituloPrincipal{
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5rem;
+    font-size: 2rem;
+}
+
+
+         
+.btn-grad {
+    background-image: linear-gradient(to right, #77A1D3 0%, #79CBCA  51%, #77A1D3  100%);
+    
+    padding: 15px 45px;
+    text-transform: uppercase;
+    margin: 1rem;
+    background-size: 200% auto;
+    color: black;      
+    font-weight: bold;      
+    box-shadow: 0 0 20px rgb(103, 107, 107);
+    border-radius: 10px;
+    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    
+  }
+
+  .btn-grad:active {
+    background-position: right center; /* change the direction of the change here */
+    color: rgb(103, 107, 107);
+    text-decoration: none;
+  }
+
+.galeria__a{
+    
+    font-size: 1.5rem;
+    width: 70%;
+}
+
+@media (min-width: 768px){    
+    
+    .galeria{
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: 50% 50%;
+    
+        grid-template-areas: "img1 central img3"
+                             "img1 central img3";
+    }
+
+    
+ 
+
+    .galeria__imgUno {
+        grid-area: img1;        
+        background-image: url(../images/comprarr.jpg);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+        width: 70%;
+        height: 25rem;
+        margin-left: 2rem;
+        
+        transition: height 1s, width 1s;
+        }
+    
+    .galeria__imgUno:hover{
+        background-image: linear-gradient(
+            rgba(255, 2, 2, 0.527),
+            rgba(255, 132, 132, 0.753)
+          ),
+          url(../images/comprarr.jpg);
+          color: rgb(61, 61, 61);
+          height: 26rem;
+          width: 75%;
+    }
+    
+      .galeria-central{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        grid-area: central;
+        
+      }
+    
+      .galeria__imgDos {
+        
+        background-image: url(../images/alquilarr_chica.jpg);
+
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        width: 70%;
+        height: 11rem;
+        margin: 1rem;
+    
+        transition: width 1s, height 1s;
+        
+      
+      }
+    
+      .galeria__imgDos:hover{
+        background-image: linear-gradient(
+            rgba(255, 188, 42, 0.685),
+            rgba(252, 219, 73, 0.575)
+          ),
+        url(../images/alquilarr_chica.jpg);
+        color: rgb(61, 61, 61);
+    
+        width: 75%;
+        height: 12rem;
+      }
+    
+    
+      .galeria__imgTres {
+        grid-area: img3;
+        background-image: url(../images/nosotross.jpg);
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        width: 70%;
+        height: 25rem;
+        margin-right: 2rem;
+    
+        transition: width 1s, height 1s;
+        
+      }
+    
+      .galeria__imgTres:hover{
+        background-image: linear-gradient(
+            rgba(138, 255, 123, 0.705),
+            rgba(98, 148, 83, 0.541)
+          ),
+        url(../images/nosotross.jpg);
+        color: rgb(61, 61, 61);
+    
+        height: 26rem;
+        width: 75%;
+      }
+    
+      .galeria__imgCuatro {
+        
+        background-image: url(../images/contactoo.jpg);
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        width: 70%;
+        height: 11rem;
+        margin: 1rem;
+      
+        transition: width 1s, height 1s;
+      }
+    
+    .galeria__imgCuatro:hover{
+        background-image: linear-gradient(
+            rgba(124, 230, 216, 0.774),
+            rgba(102, 188, 199, 0.3)
+          ),
+        url(../images/contactoo.jpg);
+        color: rgb(61, 61, 61);
+        width: 75%;
+        height: 12rem;
+    }
+    
+    
+      h3{
+        color: white;
+      }
+    
+    .galeria div{
+        border-radius: 5%;
+    }
+}
+
+
+
+
+.header__logo{
+    width: 3.5rem;
+}
+
+
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+
+}
+.contenedor__titulo h1{
+    margin: 2rem;
+}
+.contenedor__filtro{
+    margin: 2rem;
+    width: 40%;
+}
+
+.list-group{
+    text-align: center;
+    
+}
+
+.card__contImg{
+    display: flex;
+    align-items:center ;
+    padding: 0.3rem;
+}
+
+.card-text , .card-title , .text-body-secondary , .form-check-label , .form-label , ::placeholder{
+    font-family: "Nunito", sans-serif;
+}
+
+.btn-list{
+    background-color: #e3f2fd;;
+}
+
+.pag{
+    margin: 2rem;
+}
+.page-link{
+    background-color: #e3f2fd;
+    color: rgb(103, 107, 107);
+}
+
+.contFooter{
+    padding: 1rem;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    background-color: #e3f2fd;
+}
+
+@media (min-width: 768px){
+    .contenedor{
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-template-rows: 15% 25% 25% 25% 10%; 
+        grid-template-areas: "titulo titulo"
+                             "filtro card_uno"
+                             "filtro card_dos"
+                             "filtro card_tres"
+                             "pagination pagination";
+    }
+    .contenedor__titulo{
+        grid-area: titulo;       
+        display: flex;
+        justify-content: center;
+        
+    }
+    
+    .contenedor__filtro{
+        grid-area: filtro;
+        display: flex;
+        flex-direction: column;        
+        justify-content: flex-start;
+        width: 80%;
+        height: 100%;
+        
+    }
+
+   .filtro{
+    display: flex;
+    flex-direction: column;        
+    justify-content: flex-start;
+
+   }
+    
+    .contenedor__cardUno{
+        grid-area: card_uno;        
+        margin: 2rem;    
+    }
+    
+    .contenedor__cardDos{
+        grid-area: card_dos;        
+        margin: 2rem;    
+    }
+    
+    .contenedor__cardTres{
+        grid-area: card_tres;        
+        margin: 2rem;    
+    }
+    
+    .pag{
+        grid-area: pagination;        
+    }
+    
+}
+
+.contInmueble{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.carousel{
+    width: 60%;
+    margin: 2rem;
+}
+
+.contInmueble__titulo{
+    margin: 2rem;
+}
+
+.inmueble__card{
+    margin: 2rem;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.card{
+    background-color: rgb(240, 253, 253);
+}
+.card__a:hover , .galeria__a:active{
+    color: rgb(103, 107, 107);
+}
+
+
+
+
+.contContacto{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.contContacto__titulo{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+
+    
+
+}
+
+.contContacto__mapa{
+    
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    margin-top: 5rem;
+    height: ;
+}
+
+.mapa{
+    width: 70%;
+    
+}
+
+.contContacto__info{
+    
+    margin: 1rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.contContacto__info p{
+    margin: 1rem;
+}
+
+.contContacto__form{
+    
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.button-form{
+    margin: 0.5rem;
+    
+}
+
+.contContacto__info__items{
+    display: flex;
+}
+
+@media (min-width:768px) {
+    .contContacto{
+        display: grid;
+    
+        grid-template-columns: 50% 50% ;
+        grid-template-rows: 10% 40% 50%;
+    
+        grid-template-areas: "titulo titulo"
+                             "mapa info"
+                             "form form";
+    }
+    
+    
+    
+    .contContacto__titulo{
+        display: flex;
+        justify-content: center;
+        grid-area: titulo;
+        margin: 3rem;
+    
+    }
+    
+    .contContacto__mapa{
+        grid-area: mapa;
+        display: flex;
+        justify-content: center;
+        margin: 1rem;
+        margin-top: 5rem;
+    }
+    
+    .mapa{
+        width: 70%;
+        height: 80%;
+    }
+    
+    .contContacto__info{
+        grid-area: info;
+        margin: 1rem;
+        margin-top: 5rem;
+    }
+    
+    .contContacto__info p{
+        margin: 1rem;
+    }
+    
+    .contContacto__form{
+        grid-area: form;
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+    
+    .button-form{
+        margin: 0.5rem;
+        
+    }
+    
+    .contContacto__info__items{
+        display: flex;
+    }
+}
+
+.contNosotros{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.contNosotros__titulo{
+    margin: 2rem;
+}
+
+.contNosotros__video{
+    width: 70%;
+}
+
+.video{
+    width: 100%;
+}
