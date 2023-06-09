@@ -10,8 +10,9 @@ body{
 }
 
 .body_galeria{
-    background-color: #e3f2fd;
+    background-image: url(../images/fondo_body.jpg);
 }
+
 
 
 .galeria{
@@ -69,7 +70,12 @@ body{
     width: 70%;
 }
 
-@media (min-width: 768px){    
+@media (min-width: 768px){  
+    
+    .body_galeria{
+        background-color: #e3f2fd;
+        background-image: none;
+    }
     
     .galeria{
         display: grid;
