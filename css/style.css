@@ -452,7 +452,10 @@ a{
                              "form form";
     }
     
-    
+    .carousel{
+        width: 60%;
+        margin: 2rem;
+    }
     
     .contContacto__titulo{
         display: flex;
