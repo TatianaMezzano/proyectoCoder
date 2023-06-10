@@ -1,0 +1,40 @@
+.btn-grad {
+    background-image: linear-gradient(to right, #77A1D3 0%, #79CBCA  51%, #77A1D3  100%);
+    
+    padding: 15px 45px;
+    text-transform: uppercase;
+    margin: 1rem;
+    background-size: 200% auto;
+    color: black;      
+    font-weight: bold;      
+    box-shadow: 0 0 20px rgb(103, 107, 107);
+    border-radius: 10px;
+    
+    width: 100%;   
+  }
+
+  .btn-grad:active {
+    background-position: right center; /* change the direction of the change here */
+    color: rgb(103, 107, 107);
+    text-decoration: none;
+  }
+
+.galeria__a{
+    
+    font-size: 1.5rem;
+    width: 70%;
+}
+
+
+.btn-list{
+    background-color: #e3f2fd;;
+}
+
+.btn-inmueble{
+    justify-self: center;
+}
+
+.button-form{
+    margin: 0.5rem;
+    
+}

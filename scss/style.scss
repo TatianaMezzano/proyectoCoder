@@ -1,0 +1,17 @@
+@import "./utilities/variables";
+@import "./base/reset";
+
+
+@import "./components/botones";
+@import "./components/card";
+@import "./layout/header";
+@import "./layout/flex";
+@import "./layout/footer";
+@import "./views/home";
+@import "./views/comprar-alquilar";
+@import "./views/inmueble";
+@import "./views/nosotros";
+@import "./views/contacto";
+
+@import"./views/queries";
+

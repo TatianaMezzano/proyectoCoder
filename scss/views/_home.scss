@@ -1,0 +1,12 @@
+.body_galeria{
+    background-image: $img-fondo-body;
+}
+
+.galeria__a:active{
+    color: $gris-card-hover;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}

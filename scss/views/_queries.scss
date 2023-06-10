@@ -1,0 +1,268 @@
+@media (min-width: 768px){  
+    
+    .body_galeria{
+        background-color: $celeste;
+        background-image: none;
+    }
+    
+    .galeria{
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: 50% 50%;
+    
+        grid-template-areas: "img1 central img3"
+                             "img1 central img3";
+    }
+  
+    .galeria__imgUno {
+        grid-area: img1;        
+        background-image: $img-comprar;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+        width: 70%;
+        height: 25rem;
+        margin-left: 2rem;
+        
+        transition: height 1s, width 1s;
+        }
+    
+    .galeria__imgUno:hover{
+        background-image: linear-gradient(
+            $rojo,
+            $rojo-claro
+          ),
+          $img-comprar;
+          color: $gris-galeria-hover;
+          height: 26rem;
+          width: 75%;
+    }
+    
+      .galeria-central{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        grid-area: central;
+        
+      }
+    
+      .galeria__imgDos {
+        
+        background-image: $img-alquilar;
+  
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        width: 70%;
+        height: 11rem;
+        margin: 1rem;
+    
+        transition: width 1s, height 1s;
+        
+      
+      }
+    
+      .galeria__imgDos:hover{
+        background-image: linear-gradient(
+            $naranja,
+            $naranja-claro
+          ),
+          $img-alquilar;
+        color: $gris-galeria-hover;
+        width: 75%;
+        height: 12rem;
+      }
+    
+    
+      .galeria__imgTres {
+        grid-area: img3;
+        background-image: $img-nosotros;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        width: 70%;
+        height: 25rem;
+        margin-right: 2rem;
+    
+        transition: width 1s, height 1s;
+        
+      }
+    
+      .galeria__imgTres:hover{
+        background-image: linear-gradient(
+            $verde,
+            $verde-claro
+          ),
+        $img-nosotros;
+        color: $gris-galeria-hover;
+    
+        height: 26rem;
+        width: 75%;
+      }
+    
+      .galeria__imgCuatro {
+        
+        background-image: $img-contacto;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        width: 70%;
+        height: 11rem;
+        margin: 1rem;
+      
+        transition: width 1s, height 1s;
+      }
+    
+    .galeria__imgCuatro:hover{
+        background-image: linear-gradient(
+            $azul,
+            $azul-claro
+          ),
+        $img-contacto;
+        color: $gris-galeria-hover;
+        width: 75%;
+        height: 12rem;
+    }
+    
+    
+      h3{
+        color: white;
+      }
+    
+    .galeria div{
+        border-radius: 5%;
+    }
+  }
+  
+  
+  
+  @media (min-width: 768px){
+    .contenedor{
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-template-rows: 15% 25% 25% 25% 10%; 
+        grid-template-areas: "titulo titulo"
+                             "filtro card_uno"
+                             "filtro card_dos"
+                             "filtro card_tres"
+                             "pagination pagination";
+    }
+    .contenedor__titulo{
+        grid-area: titulo;       
+        display: flex;
+        justify-content: center;
+        
+    }
+    
+    .contenedor__filtro{
+        grid-area: filtro;
+        display: flex;
+        flex-direction: column;        
+        justify-content: flex-start;
+        width: 80%;
+        height: 100%;
+        
+    }
+  
+   .filtro{
+    display: flex;
+    flex-direction: column;        
+    justify-content: flex-start;
+  
+   }
+    
+    .contenedor__cardUno{
+        grid-area: card_uno;        
+        margin: $margen-card;    
+    }
+    
+    .contenedor__cardDos{
+        grid-area: card_dos;        
+        margin: $margen-card;    
+    }
+    
+    .contenedor__cardTres{
+        grid-area: card_tres;        
+        margin: $margen-card;    
+    }
+    
+    .pag{
+        grid-area: pagination;        
+    }
+    
+  }
+  
+  
+  @media (min-width:768px) {
+    .contContacto{
+        display: grid;
+    
+        grid-template-columns: 50% 50% ;
+        grid-template-rows: 10% 40% 50%;
+    
+        grid-template-areas: "titulo titulo"
+                             "mapa info"
+                             "form form";
+    }
+    
+    .carousel{
+        width: 60%;
+        margin: 2rem;
+    }
+    
+    .contContacto__titulo{
+        display: flex;
+        justify-content: center;
+        grid-area: titulo;
+        margin: 3rem;
+    
+    }
+    
+    .contContacto__mapa{
+        grid-area: mapa;
+        display: flex;
+        justify-content: center;
+        margin: 1rem;
+        margin-top: 5rem;
+    }
+    
+    .mapa{
+        width: 70%;
+        height: 80%;
+    }
+    
+    .contContacto__info{
+        grid-area: info;
+        margin: 1rem;
+        margin-top: 5rem;
+    }
+    
+    .contContacto__info p{
+        margin: 1rem;
+    }
+    
+    .contContacto__form{
+        grid-area: form;
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+    
+    .button-form{
+        margin: 0.5rem;
+        
+    }
+    
+    .contContacto__info__items{
+        display: flex;
+    }
+  }
