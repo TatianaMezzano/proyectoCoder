@@ -2,11 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Acme", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 body {
-  background-color: rgb(199, 199, 199);
+  background-color: rgb(255, 255, 255);
 }
 
 .btn-grad {
@@ -46,7 +46,7 @@ body {
 }
 
 .card-text, .card-title {
-  font-family: "Nunito", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 .inmueble__card {
@@ -54,7 +54,7 @@ body {
 }
 
 .card {
-  background-color: rgb(240, 253, 253);
+  background-color: #33A099;
 }
 
 .card__a:hover {
@@ -62,11 +62,15 @@ body {
 }
 
 .text-body-secondary, .form-check-label, .form-label, ::placeholder {
-  font-family: "Nunito", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 .header__logo {
   width: 3.5rem;
+}
+
+.navbar {
+  background-color: #339999;
 }
 
 .galeria {
@@ -165,7 +169,7 @@ body {
   margin-top: 3rem;
   display: flex;
   justify-content: center;
-  background-color: #e3f2fd;
+  background-color: #339999;
 }
 
 .body_galeria {
@@ -199,7 +203,7 @@ a {
 }
 
 .page-link {
-  background-color: #e3f2fd;
+  background-color: #A6DFED;
   color: rgb(103, 107, 107);
 }
 
@@ -240,7 +244,7 @@ a {
 
 @media (min-width: 768px) {
   .body_galeria {
-    background-color: #e3f2fd;
+    background-color: #339999;
     background-image: none;
   }
   .galeria {
