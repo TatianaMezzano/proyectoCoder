@@ -1,7 +1,12 @@
 @media (min-width: 768px){  
+
+  .collapse{
+    display: flex;
+    justify-content: flex-end;
+}
     
     .body_galeria{
-        background-color: $celeste;
+        background-color: white;
         background-image: none;
     }
     
@@ -150,12 +155,17 @@
     .contenedor{
         display: grid;
         grid-template-columns: 30% 70%;
-        grid-template-rows: 15% 25% 25% 25% 10%; 
-        grid-template-areas: "titulo titulo"
+        grid-template-rows: 5% 10% 25% 25% 25% 10%; 
+        grid-template-areas: "img img"
+                             "titulo titulo"
                              "filtro card_uno"
                              "filtro card_dos"
                              "filtro card_tres"
                              "pagination pagination";
+    }
+
+    .fotosCarousel{
+      grid-area: img;
     }
     .contenedor__titulo{
         grid-area: titulo;       
@@ -179,8 +189,8 @@
     flex-direction: column;        
     justify-content: flex-start;
   
-   }
-    
+   } 
+
     .contenedor__cardUno{
         grid-area: card_uno;        
         margin: $margen-card;    
@@ -214,7 +224,7 @@
                              "mapa info"
                              "form form";
     }
-    
+ 
     .carousel{
         width: 60%;
         margin: 2rem;
@@ -247,8 +257,10 @@
         margin-top: 5rem;
     }
     
-    .contContacto__info p{
-        margin: 1rem;
+    .contContacto__info{
+        p{
+          margin: 1rem;
+        }
     }
     
     .contContacto__form{
@@ -264,5 +276,55 @@
     
     .contContacto__info__items{
         display: flex;
+    }
+  }
+
+  @media (min-width:768px){
+    .nosotros__contenedor{
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 10% 40% 10% 40%;
+
+      grid-template-areas: "titulo titulo"
+                           "texto foto"
+                           "preVideo preVideo"
+                           "video video"
+    }
+
+    .nosotros__titulo{
+      grid-area: titulo;
+      display: flex;
+      justify-content: center;
+      margin: 1rem;
+    }
+
+    .nosotros__texto{
+      grid-area: texto;
+      margin: 6rem;
+      font-size: 1.5rem;
+    }
+
+    .nosotros__img{
+      grid-area: foto;
+      width: 60%;
+      margin-left: 6rem;
+      margin-right: 4rem;
+      margin-bottom: 3rem;
+    }
+    
+    .nosotros__preVideo{
+      grid-area: preVideo;
+      display: flex;
+      justify-content: center;
+      margin-top: 7rem;
+      margin-bottom: 4rem;
+
+    }
+
+    .nosotros__contenedorVideo{
+      grid-area: video;
+      
+      
+      
     }
   }

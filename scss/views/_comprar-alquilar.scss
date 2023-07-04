@@ -1,27 +1,38 @@
 
 .contenedor__titulo{
+    
 
     h1{
         margin: 2rem;
+        
     }
     
 }
 
+#carouselExampleFade{
+    width: 100%;
+    height: 5%;    
+}
+ 
+
 .contenedor__filtro{
     margin: 2rem;
     width: 90%;
+    background-color: white;
 
 }
 
 .list-group{
-    text-align: center;    
+    text-align: center; 
+    background-color: white;   
 }
+
 
 .pag{
     margin: 2rem;
 }
 
 .page-link{
-    background-color: $celestito;
-    color: $gris-card-hover;
+    
+    color: black;
 }

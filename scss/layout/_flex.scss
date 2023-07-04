@@ -7,8 +7,7 @@
     align-content: center;
     padding-bottom:2rem;
     padding-top: 2rem;
-    width: 100%;
-    
+    width: 100%;    
     
 }
 
@@ -42,9 +41,7 @@
 .contContacto__titulo{
     display: flex;
     justify-content: center;
-    margin-top: 2rem;
-
-    
+    margin-top: 2rem;  
 
 }
 
@@ -74,13 +71,6 @@
 }
 
 
-.contNosotros{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-}
 
 .card__contImg{
     display: flex;
@@ -98,4 +88,11 @@
     justify-content: center;
     align-items: center;
     align-content: center;
+}
+
+.contenedor__carousel{
+    display: flex;
+    
+    justify-content: center;
+    
 }

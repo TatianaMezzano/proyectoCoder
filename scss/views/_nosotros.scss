@@ -2,10 +2,51 @@
     margin: 2rem;
 }
 
-.contNosotros__video{
-    width: 70%;
-}
+
+
+
 
 .video{
-    width: 100%;
+    width: 70%;
+    margin-top: 2rem;
 }
+
+
+
+    .nosotros__titulo{
+        display: flex;
+        justify-content: center;
+    }
+
+    .nosotros__texto{
+        font-size: 1.5rem;
+        margin: 3rem;
+    }
+
+
+    .nosotros__img{
+        border-radius: 5%;
+        width: 50%;
+        
+    }
+    .nosotros__contenedorImg{
+        display: flex;
+        justify-content: center;
+        margin: 2rem;
+    }
+    
+    .nosotros__preVideo{
+        display: flex;
+        justify-content: center;
+        margin: 2rem;
+        font-size: 1.5rem;      
+
+    }
+
+    .nosotros__contenedorVideo{
+        display: flex;
+      justify-content: center;
+      margin: 2rem;
+    }
+
+
